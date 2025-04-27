@@ -19,10 +19,14 @@
     "@strapi/plugin-users-permissions": "5.12.4",
     "@strapi/strapi": "5.12.4",
     "better-sqlite3": "11.3.0",
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "razorpay": "^2.9.6",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
-    "styled-components": "^6.0.0"
+    "styled-components": "^6.0.0",
+    "twilio": "^5.5.2"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -36,5 +40,10 @@
   },
   "strapi": {
     "uuid": "fa234419-1d11-451d-a3f7-78ce721a3c74"
-  }
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
 }
