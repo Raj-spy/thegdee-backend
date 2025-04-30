@@ -1,0 +1,11 @@
+[
+    {
+      "method": "POST",
+      "path": "/razorpay-webhook",
+      "handler": "razorpay.handleRazorpayWebhook",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+  

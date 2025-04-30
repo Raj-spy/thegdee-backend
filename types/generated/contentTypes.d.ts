@@ -400,6 +400,7 @@ export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
     phoneNumber: Schema.Attribute.String;
     products: Schema.Attribute.JSON;
     publishedAt: Schema.Attribute.DateTime;
+    razorpayPaymentId: Schema.Attribute.String;
     totalAmount: Schema.Attribute.BigInteger;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
