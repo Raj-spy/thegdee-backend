@@ -1,17 +1,11 @@
 export default ({ env }) => ({
   auth: {
-    secret: env('ADMIN_JWT_SECRET'),
+    secret: env('ADMIN_JWT_SECRET', 'default-secret-key'),
   },
   apiToken: {
-    salt: env('API_TOKEN_SALT'),
+    salt: env('API_TOKEN_SALT', 'M+nL4BQLWXJlVVzrLlDvng=='),
   },
-  transfer: {
-    token: {
-      salt: env('TRANSFER_TOKEN_SALT'),
-    },
-  },
-  flags: {
-    nps: env.bool('FLAG_NPS', true),
-    promoteEE: env.bool('FLAG_PROMOTE_EE', true),
-  },
+  url: '/admin', // ✅ This makes sure admin panel works on any IP, not just localhost
+  host: '0.0.0.0', // ✅ Makes it accessible from other devices
+  port: 1337,      // Make sure your Strapi app listens on this port
 });

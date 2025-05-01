@@ -17,7 +17,7 @@
   "dependencies": {
     "@strapi/plugin-cloud": "5.12.4",
     "@strapi/plugin-users-permissions": "5.12.4",
-    "@strapi/strapi": "5.12.4",
+    "@strapi/strapi": "^5.12.4",
     "better-sqlite3": "11.3.0",
     "body-parser": "^2.2.0",
     "express": "^5.1.0",
@@ -26,13 +26,16 @@
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
     "styled-components": "^6.0.0",
-    "twilio": "^5.5.2"
+    "twilio": "^5.5.2",
+    "undici": "^4.8.1",
+    "web-streams-polyfill": "^4.1.0"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "typescript": "^5"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
   },
   "engines": {
     "node": ">=18.0.0 <=22.x.x",
