@@ -1,9 +1,10 @@
-export default ({ env }) => ({
+export default {
     upload: {
-      provider: 'local',  // Using the local file system for uploads
-      providerOptions: {
-        sizeLimit: 100000000, // Set a file size limit (e.g., 10MB)
+      config: {
+        providerOptions: {
+          sizeLimit: 100 * 1024 * 1024, // 100MB
+        },
       },
     },
-  });
+  };
   
